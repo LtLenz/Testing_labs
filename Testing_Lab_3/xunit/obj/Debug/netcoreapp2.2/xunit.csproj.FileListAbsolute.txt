@@ -1,0 +1,11 @@
+C:\home\study\testing_lab\xunit\xunit\bin\Debug\netcoreapp2.2\xunit.deps.json
+C:\home\study\testing_lab\xunit\xunit\bin\Debug\netcoreapp2.2\xunit.runtimeconfig.json
+C:\home\study\testing_lab\xunit\xunit\bin\Debug\netcoreapp2.2\xunit.runtimeconfig.dev.json
+C:\home\study\testing_lab\xunit\xunit\bin\Debug\netcoreapp2.2\xunit.dll
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.csprojAssemblyReference.cache
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.csproj.CoreCompileInputs.cache
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.AssemblyInfoInputs.cache
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.AssemblyInfo.cs
+C:\home\study\testing_lab\xunit\xunit\bin\Debug\netcoreapp2.2\xunit.pdb
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.dll
+C:\home\study\testing_lab\xunit\xunit\obj\Debug\netcoreapp2.2\xunit.pdb
