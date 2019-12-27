@@ -21,12 +21,10 @@ public class IncorrectPromoPage extends AbstractPage{
 
     private final By cart = By.className("cart-link");
 
-
-
     @FindBy(className = "order-footer__input-promo")
     private WebElement promoInput;
 
-    @FindBy(className = "cart-info-message")
+    @FindBy(xpath = "//*[@id=\"panel\"]/div[2]/div/div[2]/div[1]/div[3]/div/div[6]/div/div/div")
     private WebElement errorFieldLocator;
 
     public IncorrectPromoPage(WebDriver driver) {
@@ -41,7 +39,7 @@ public class IncorrectPromoPage extends AbstractPage{
     }
 
     public IncorrectPromoPage addToCart() {
-        WebElement toCartButton = driver.findElement(By.className("btn btn-orange btn-buy"));
+        WebElement toCartButton = driver.findElement(By.xpath("//*[@id=\"content\"]/div[4]/div[2]/div[3]/div[2]/div/div[4]/div[2]/div/button"));
         toCartButton.click();
         logger.info("Added to Cart");
         return this;
@@ -62,7 +60,7 @@ public class IncorrectPromoPage extends AbstractPage{
     }
 
     public IncorrectPromoPage applyPromo(){
-        WebElement applyPromo = driver.findElement(By.className("btn btn-dark-grey w--110px js-bind-promo_submit"));
+        WebElement applyPromo = driver.findElement(By.xpath("//*[@id=\"panel\"]/div[2]/div/div[2]/div[1]/div[3]/div/div[3]/form/button"));
         applyPromo.click();
         logger.info("Ok button was clicked");
         return this;
@@ -70,7 +68,7 @@ public class IncorrectPromoPage extends AbstractPage{
 
     public String getErrorText() {
         WebElement test = new WebDriverWait(driver, SECONDS_TO_LOAD)
-                .until(ExpectedConditions.visibilityOf(errorFieldLocator));
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"panel\"]/div[2]/div/div[2]/div[1]/div[3]/div/div[6]/div/div/div")));
 
         return errorFieldLocator.getText();
     }
